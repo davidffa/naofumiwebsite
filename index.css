@@ -64,7 +64,14 @@ header #identity {
     max-height: 64px;
     max-width: 64px;
 
-    border: 1px solid rgb(0, 130, 0);
+    border: 2px solid rgb(0, 90, 0);
+}
+
+.container header .header-buttons {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
 }
 
 .container header button {
@@ -176,22 +183,6 @@ footer p {
     text-align: center;
 }
 
-@media (max-width: 800px) {
-    .container main h2 {
-        font-size: 34px;
-    }
-
-    .container main .buttons-container {
-        flex-direction: column;
-    }
-
-    .container main .buttons-container button {
-        width: 260px;
-
-        margin: 4px;
-    }
-}
-
 @media (max-width: 1440px) {
     .container main .buttons-container button {
         width: 260px;
@@ -212,6 +203,22 @@ footer p {
     }
 }
 
+@media (max-width: 800px) {
+    .container main h2 {
+        font-size: 34px;
+    }
+
+    .container main .buttons-container {
+        flex-direction: column;
+    }
+
+    .container main .buttons-container button {
+        width: 260px;
+
+        margin: 4px;
+    }
+}
+
 @media (max-width: 710px) {
     .container main h2 {
         font-size: 28px;
@@ -221,6 +228,15 @@ footer p {
         font-size: 12px;
 
         width: 66%;
+    }
+}
+
+@media (max-width: 560px) {
+    .container header .header-buttons {
+        flex-direction: column;
+    
+        align-items: space-between;
+        justify-content: center;
     }
 }
 
