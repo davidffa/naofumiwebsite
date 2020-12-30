@@ -208,6 +208,16 @@ footer p {
     }
 }
 
+@media (max-width: 710px) {
+    .container main h2 {
+        font-size: 20px;
+    }
+
+    .container main p {
+        font-size: 12px;
+    }
+}
+
 @media (max-width: 450px) {
     header #identity {
         margin-left: 12px;
@@ -219,10 +229,6 @@ footer p {
 
     .container header button {
         margin-right: 12px;
-    }
-
-    .container main h2 {
-        font-size: 20px;
     }
 
     .container main p {
