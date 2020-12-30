@@ -206,15 +206,21 @@ footer p {
     .container main .buttons-container button {
         width: 200px;
     }
+
+    .container main p {
+        width: 60%;
+    }
 }
 
 @media (max-width: 710px) {
     .container main h2 {
-        font-size: 20px;
+        font-size: 28px;
     }
 
     .container main p {
         font-size: 12px;
+
+        width: 66%;
     }
 }
 
@@ -233,6 +239,17 @@ footer p {
 
     .container main p {
         display: none;
+    }
+
+    .container main h2 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 360px) {
+    header {
+        flex-direction: column;
+        align-items: center;
     }
 }
 
