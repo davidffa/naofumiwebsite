@@ -154,8 +154,17 @@ header #identity {
     padding-right: 12px;
 }
 
+.container main .buttons-container #support-button img {
+    height: 28px;
+    padding-right: 12px;
+    fill: #e5e5e5;
+}
+
 .container main .buttons-container #support-button {
     background-color: rgb(173, 98, 0);   
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .container main .buttons-container #support-button:hover {
