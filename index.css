@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #e5e5e5;
+    background-color: #000;
+    background-image: url('../assets/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+body, input, button, textarea, a {
+    font: 400 18px 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header {
+    width: 100vw;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+header #identity {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-left: 34px;
+    margin-top: 18px;
+}
+
+.container header #title {
+    font-size: 38px;
+    font-family: 'Exo 2', sans-serif;
+    color: rgb(0, 160, 0);
+
+    margin-left: 24px;
+}
+
+.container header #avatar {
+    border-radius: 50%;
+    max-height: 64px;
+    max-width: 64px;
+
+    border: 1px solid rgb(0, 130, 0);
+}
+
+.container header button {
+    margin-top: 24px;
+    margin-right: 34px;
+    border: none;
+    outline: none;
+    background-color:rgb(0, 75, 189);
+    padding: 12px;
+    border-radius: 4px;
+
+    transition: 0.2s;
+    cursor: pointer;
+
+    color: #e5e5e5;
+}
+
+.container header button:hover {
+    background-color:rgb(0, 75, 189, 0.7);
+}
+
+.container main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container main h2 {
+    font-size: 54px;
+    color:rgb(173, 98, 0);    
+}
+
+.container main p {
+    margin-top: 64px;
+    font-size: 18px;
+    width: 38%; 
+
+    color:rgb(194, 194, 194, 0.8);
+}
+
+.container main .buttons-container {
+    margin-top: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    width: 45%;
+}
+
+.container main .buttons-container button {
+    font-weight: bold;
+
+    border: none;
+    outline: none;
+    color: #e5e5e5;
+
+    width: 330px;
+    height: 54px;
+
+    border: 1px solid rgba(0, 0, 0, 0.7);
+    border-radius: 4px;
+
+    cursor: pointer;
+
+    transition: 0.4s;
+}
+
+.container main .buttons-container button:hover {
+    transform: scale(1.1);
+}
+
+.container main .buttons-container #invite-button {
+    background-color: rgb(0, 75, 189);  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container main .buttons-container #invite-button:hover {
+    background-color: rgb(0, 75, 189, 0.7);  
+}
+
+.container main .buttons-container #invite-button img {
+    height: 28px;
+    padding-right: 12px;
+}
+
+.container main .buttons-container #support-button {
+    background-color: rgb(173, 98, 0);   
+}
+
+.container main .buttons-container #support-button:hover {
+    background-color: rgb(173, 98, 0, 0.7);
+}
+
+footer p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 12px;
+    text-align: center;
+}
+
+@media (max-width: 800px) {
+    .container main h2 {
+        font-size: 34px;
+    }
+
+    .container main .buttons-container {
+        flex-direction: column;
+    }
+
+    .container main .buttons-container button {
+        width: 260px;
+
+        margin: 4px;
+    }
+}
+
+@media (max-width: 1440px) {
+    .container main .buttons-container button {
+        width: 260px;
+    }
+}
+
+@media (max-width: 1090px) {
+    .container main .buttons-container button {
+        width: 200px;
+    }
+}
+
+@media (max-width: 450px) {
+    header #identity {
+        margin-left: 12px;
+    }
+
+    .container header #title {
+        font-size: 28px;
+    }
+
+    .container header button {
+        margin-right: 12px;
+    }
+
+    .container main h2 {
+        font-size: 20px;
+    }
+
+    .container main p {
+        display: none;
+    }
+}
+
+@media (max-width: 330px) {
+    header #identity {
+        margin-left: 0px;
+    }
+
+    .container header #title {
+        font-size: 22px;
+    }
+
+    .container header button {
+        margin-right: 0px;
+    }
+}

@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #e5e5e5;
+    background-color: #000;
+    background-image: url('../assets/background.png');
+    background-repeat: repeat-y;
+    background-size: initial;
+    background-position: center;
+
+    font-family: 'Roboto', sans-serif;
+
+    overflow-x: hidden;
+}
+
+body, input, button, textarea, a {
+    font: 400 18px 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 4;
+}
+
+header {
+    width: 100vw;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+header #identity {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-left: 34px;
+    margin-top: 18px;
+}
+
+.container header #title {
+    font-size: 38px;
+    font-family: 'Exo 2', sans-serif;
+    color: rgb(0, 160, 0);
+
+    margin-left: 24px;
+}
+
+.container header #avatar {
+    border-radius: 50%;
+    max-height: 64px;
+    max-width: 64px;
+
+    border: 1px solid rgb(0, 130, 0);
+}
+
+.container main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container main h1 {
+    color: #e5e5e5;
+    margin-top: 42px;
+}
+
+.container main h2 {
+    margin-top: 148px;
+    color: rgb(173, 98, 0);
+}
+
+.container main table {
+    margin-top: 32px;
+    width: 60vw;
+    border-spacing: 8px;
+}
+
+.container main table, th, td {
+    border: 1px solid rgb(0, 130, 0);
+    border-collapse: collapse;
+}
+
+.container main th, td {
+    padding: 15px;
+}
+
+footer {
+    margin-top: 52px;
+}
+
+footer p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 12px;
+    text-align: center;
+}
+
+@media (max-width: 800px) {
+    body {
+        font-size: 16px;
+    }
+}

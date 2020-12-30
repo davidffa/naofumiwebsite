@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS import -->
+    <link rel="stylesheet" type="text/css" href="./comandos.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/favicon.ico" />
+    <title>Naofumi™ - Bot</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <a href="." id="identity">
+                <img src="./assets/avatar.png" id="avatar" alt="avatar" />
+                <h1 id="title">Naofumi™</h1>
+            </a>
+        </header>
+        <main>
+            <h1>Comandos</h1>
+
+            <h2>Moderação</h2>
+            <table>
+                <tr>
+                    <th>Nome</th>
+                    <th>Descrição</th>
+                    <th>Aliases</th>
+                </tr>
+                <tr>
+                    <td>ban</td>
+                    <td>De ban em algum usuário de seu servidor.</td>
+                    <td>banir</td>
+                </tr>
+                <tr>
+                    <td>kick</td>
+                    <td>Expulse um Usuário de seu Servidor.</td>
+                    <td>kickar, expulsar</td>
+                </tr>
+                <tr>
+                    <td>setprefix</td>
+                    <td>Sete um novo Prefixo pra mim no Servidor</td>
+                    <td>Sem aliases</td>
+                </tr>
+                <tr>
+                    <td>clear</td>
+                    <td>Delete uma Certa quantidade de Mensagens do Canal.</td>
+                    <td>limpar</td>
+                </tr>
+                <tr>
+                    <td>Defesas</td>
+                    <td>Ative meus sistemas de Defesa clicando nas reações.</td>
+                    <td>Sem aliases</td>
+                </tr>
+                <tr>
+                    <td>lock</td>
+                    <td>Tranque o canal para o Cargo <i>@everyone</i></td>
+                    <td>trancar</td>
+                </tr>
+                <tr>
+                    <td>unlock</td>
+                    <td>Destranque um Canal do Servidor.</td>
+                    <td>destrancar</td>
+                </tr>
+                <tr>
+                    <td>modolento</td>
+                    <td>Adicione um Cooldown de Mensagens ao Canal.</td>
+                    <td>slowmode, timing</td>
+                </tr>
+                <tr>
+                    <td>autorole</td>
+                    <td>Sete um autorole que devo adicionar aos novatos no servidor.</td>
+                    <td>Sem aliases</td>
+                </tr>
+                <tr>
+                    <td>welcome</td>
+                    <td>Sete o canal que devo mandar meu Welcome Card.</td>
+                    <td>Sem aliases</td>
+                </tr>
+                <tr>
+                    <td>logs</td>
+                    <td>Sete o Canal de logs que devo mandar todas as mudanças no servidor.</td>
+                    <td>setlogs</td>
+                </tr>
+            </table>
+
+            <h2>Economia</h2>
+            <table>
+                <tr>
+                    <th>Nome</th>
+                    <th>Descrição</th>
+                    <th>Aliases</th>
+                </tr>
+                <tr>
+                    <td>daily</td>
+                    <td>Pegue seu Prêmio diário</td>
+                    <td>diario</td>
+                </tr>
+                <tr>
+                    <td>bal</td>
+                    <td>Veja seu Saldo ou o Saldo de alguém.</td>
+                    <td>coins, atm</td>
+                </tr>
+                <tr>
+                    <td>pagar</td>
+                    <td>Pague uma certa quantia de Coins para o Usuário.</td>
+                    <td>pay</td>
+                </tr>
+            </table>
+
+            <h2>Experiência</h2>
+            <table>
+                <tr>
+                    <th>Nome</th>
+                    <th>Descrição</th>
+                    <th>Aliases</th>
+                </tr>
+                <tr>
+                    <td>exp</td>
+                    <td>Veja seu Level no Servidor em seu exp card.</td>
+                    <td>Sem aliases</td>
+                </tr>
+                <tr>
+                    <td>kick</td>
+                    <td>Veja o Top Rank de Level do Servidor.</td>
+                    <td>ranktop</td>
+                </tr>
+                <tr>
+                    <td>expsistem</td>
+                    <td>Configure meu Sistema de Experiência.</td>
+                    <td>Sem aliases</td>
+                </tr>
+            </table>
+
+            <h2>Sistema Vip</h2>
+            <table>
+                <tr>
+                    <th>Nome</th>
+                    <th>Descrição</th>
+                    <th>Aliases</th>
+                </tr>
+                <tr>
+                    <td>configvip</td>
+                    <td>Configure um Vip para algum usuário de seu Servidor.</td>
+                    <td>cvip</td>
+                </tr>
+                <tr>
+                    <td>editvip</td>
+                    <td>Edite seu Vip caso tenha um no Servidor.</td>
+                    <td>evip</td>
+                </tr>
+                <tr>
+                    <td>vip</td>
+                    <td>Adicione seu Cargo Vip a algum Usuário caso tenha um vip.</td>
+                    <td>Sem aliases</td>
+                </tr>
+            </table>
+
+            <h2>Entretenimento</h2>
+            <table>
+                <tr>
+                    <th>Nome</th>
+                    <th>Descrição</th>
+                    <th>Aliases</th>
+                </tr>
+                <tr>
+                    <td>triggered</td>
+                    <td>Mostre sua raiva com um Gif que eu criarei.</td>
+                    <td>trigger</td>
+                </tr>
+                <tr>
+                    <td>jail</td>
+                    <td>Prenda o Usuário atrás das Grades.</td>
+                    <td>cadeia</td>
+                </tr>
+                <tr>
+                    <td>wasted</td>
+                    <td>Prenda um Usuário estilo GTA V</td>
+                    <td>Sem aliases</td>
+                </tr>
+                <tr>
+                    <td>wanted</td>
+                    <td>Ofereça uma Recompensa na cabeça um Usuário do servidor.</td>
+                    <td>procurado</td>
+                </tr>
+                <tr>
+                    <td>trash</td>
+                    <td>Faça algum Usuário de Lixo.</td>
+                    <td>lixo</td>
+                </tr>
+                <tr>
+                    <td>kiss</td>
+                    <td>Beije um algum Usuário do Servidor.</td>
+                    <td>beijar</td>
+                </tr>
+                <tr>
+                    <td>abraçar</td>
+                    <td>De um abraço em alguém que você goste.</td>
+                    <td>hug, abraço, abraco, abracar</td>
+                </tr>
+                <tr>
+                    <td>tapa</td>
+                    <td>De um Tapa em algum usuário do Servidor.</td>
+                    <td>slap, tapão, tapao</td>
+                </tr>
+                <tr>
+                    <td>pornhub</td>
+                    <td>Simule uma Postagem no Pornhub com o avatar de alguém e uma Legenda personalizada.</td>
+                    <td>phub</td>
+                </tr>
+                <tr>
+                    <td>rip</td>
+                    <td>Simule o Enterro de algum usuário.</td>
+                    <td>Sem aliases</td>
+                </tr>
+                <tr>
+                    <td>ship</td>
+                    <td>Faça um Ship entre 2 pessoas do Servidor.</td>
+                    <td>Sem aliases</td>
+                </tr>
+                <tr>
+                    <td>memes</td>
+                    <td>Veja memes do Anime de Tate no Yuusha.</td>
+                    <td>meme</td>
+                </tr>
+                <tr>
+                    <td>anime</td>
+                    <td>Veja informações de algum Anime.</td>
+                    <td>Sem aliases.</td>
+                </tr>
+                <tr>
+                    <td>spotify</td>
+                    <td>Veja a Música que você ou alguém está escutando em um Card feito por mim.</td>
+                    <td>spot</td>
+                </tr>
+            </table>
+
+            <h2>Utilidade</h2>
+            <table>
+                <tr>
+                    <th>Nome</th>
+                    <th>Descrição</th>
+                    <th>Aliases</th>
+                </tr>
+                <tr>
+                    <td>ajuda</td>
+                    <td>Mostra toda a minha lista de comandos na qual você pode ver como funciona e para que o comando serve.</td>
+                    <td>help, comandos</td>
+                </tr>
+                <tr>
+                    <td>userinfo</td>
+                    <td>Veja as Informações de algum Usuário do Servidor.</td>
+                    <td>ui</td>
+                </tr>
+                <tr>
+                    <td>serverinfo</td>
+                    <td>Veja as Informações de algum Servidor.</td>
+                    <td>si</td>
+                </tr>
+                <tr>
+                    <td>avatar</td>
+                    <td>Veja o Avatar de alguém ou o seu avatar.</td>
+                    <td>Sem aliases</td>
+                </tr>
+                <tr>
+                    <td>botinfo</td>
+                    <td>Veja as Minhas Informações.</td>
+                    <td>bi</td>
+                </tr>
+                <tr>
+                    <td>div</td>
+                    <td>Veja a Quantidade de convites você ou alguém tem</td>
+                    <td>Sem aliases</td>
+                </tr>
+                <tr>
+                    <td>divs</td>
+                    <td>Veja o top 5 divulgadores do Servidor.</td>
+                    <td>topdivs</td>
+                </tr>
+                <tr>
+                    <td>servericon</td>
+                    <td>Veja o icone do Servidor com uma Qualidade maior</td>
+                    <td>Sem aliases</td>
+                </tr>
+                <tr>
+                    <td>ping</td>
+                    <td>Veja o ping da API e do Bot.</td>
+                    <td>Sem aliases</td>
+                </tr>
+                <tr>
+                    <td>reportbug</td>
+                    <td>Reporte um Bug para meus Criadores.</td>
+                    <td>Sem aliases</td>
+                </tr>
+                <tr>
+                    <td>vote</td>
+                    <td>Vote em mim na Discord Bot List.</td>
+                    <td>Sem aliases</td>
+                </tr>
+                <tr>
+                    <td>background</td>
+                    <td>Adicione um Fundo ao seu Exp Card ou ao Profile Card</td>
+                    <td>fundo</td>
+                </tr>
+                <tr>
+                    <td>desc</td>
+                    <td>Sete uma Descrição para seu Profile Card.</td>
+                    <td>Sem aliases</td>
+                </tr>
+                <tr>
+                    <td>emoji</td>
+                    <td>Veja as Informações de um Emoji</td>
+                    <td>Sem alises</td>
+                </tr>
+                <tr>
+                    <td>translate</td>
+                    <td>Traduza algum texto para sua Língua.</td>
+                    <td>traduzir</td>
+                </tr>
+                <tr>
+                    <td>rep</td>
+                    <td>De reputação a algum amigo ou conhecido.</td>
+                    <td>reputation, reputação, reputacao</td>
+                </tr>
+                <tr>
+                    <td>invite</td>
+                    <td>Consiga o Invite para me adicionar em seu Servidor</td>
+                    <td>convite</td>
+                </tr>
+                <tr>
+                    <td>website</td>
+                    <td>Veja o Link para ser Direcionado ao meu Website</td>
+                    <td>site</td>
+                </tr>
+            </table>
+        </main>
+        <footer>
+            <p>Copyright &copy; 2021 Naofumi™ Todos os direitos reservados.<br/>Desenvolvido por D4rkB#2408</p>
+        </footer>
+    </div>
+</body>
+
+</html>
