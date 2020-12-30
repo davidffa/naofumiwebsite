@@ -157,7 +157,6 @@ header #identity {
 .container main .buttons-container #support-button img {
     height: 28px;
     padding-right: 12px;
-    fill: #e5e5e5;
 }
 
 .container main .buttons-container #support-button {
@@ -196,6 +195,10 @@ footer p {
 @media (max-width: 1440px) {
     .container main .buttons-container button {
         width: 260px;
+    }
+
+    .container main .buttons-container #support-button img {
+        padding-right: 8px;
     }
 }
 
