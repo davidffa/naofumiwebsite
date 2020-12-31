@@ -9,6 +9,7 @@ body {
     background-color: #000;
     background-image: url('../assets/background.jpg');
     background-repeat: repeat-y;
+    background-size: contain;
 
     font-family: 'Roboto', sans-serif;
 
