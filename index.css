@@ -75,8 +75,6 @@ header #identity {
 }
 
 .container header button {
-    margin-top: 24px;
-    margin-right: 34px;
     border: none;
     outline: none;
     background-color:rgb(0, 75, 189);
@@ -87,6 +85,11 @@ header #identity {
     cursor: pointer;
 
     color: #e5e5e5;
+}
+
+.container header .header-buttons a {
+    margin-top: 24px;
+    margin-right: 34px;
 }
 
 .container header button:hover {
@@ -249,7 +252,7 @@ footer p {
         font-size: 28px;
     }
 
-    .container header button {
+    .container header .header-buttons a {
         margin-right: 12px;
     }
 
@@ -278,7 +281,7 @@ footer p {
         font-size: 22px;
     }
 
-    .container header button {
+    .container header .header-buttons a {
         margin-right: 0px;
     }
 }
